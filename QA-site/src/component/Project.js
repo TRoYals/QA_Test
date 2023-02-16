@@ -10,9 +10,11 @@ const Project = ({ name, image, url, description }) => {
     >
       <article className="project-item">
         <img src={image} alt={name} className="img" />
-        <div className="info">
-          <h5>{description}</h5>
-        </div>
+        {description ? (
+          <div className="info">
+            <h5>{description}</h5>
+          </div>
+        ) : null}
       </article>
       <footer>
         <h5>{name}</h5>

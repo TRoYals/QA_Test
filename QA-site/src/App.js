@@ -9,7 +9,7 @@ function App() {
     <div className="App">
       {<Hero />}
 
-      <Projects title="basic projects" projects={data.basic} />
+      <Projects title="basic projects" projects={data.basic} key="1" />
     </div>
   );
 }
